@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>História: Bebê Jesus – Músicas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF8F2;
+    --ink: #2B2A3A;
+    --muted: #6B6878;
+    --accent: #23305E;
+    --soft: #E6EAF6;
+    --star: #F2C14E;
+    --line: #E4DED2;
+    --surface: #FFFFFF;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161827;
+      --ink: #EDEBF4;
+      --muted: #A9A6B8;
+      --accent: #AFC0F2;
+      --soft: #1F2540;
+      --star: #F5CE6A;
+      --line: #2C2F45;
+      --surface: #1D2033;
+      color-scheme: dark;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 20px 56px; }
+  header { padding: 48px 0 28px; text-align: center; }
+  .star {
+    width: 64px; height: 64px; margin: 0 auto 16px; display: block;
+    filter: drop-shadow(0 0 14px color-mix(in srgb, var(--star) 55%, transparent));
+  }
+  h1 {
+    font-family: "Fredoka", "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 7vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  header p { margin: 0 auto; color: var(--muted); max-width: 30em; }
+
+  ol { list-style: none; margin: 0; padding: 0; counter-reset: song; }
+  li {
+    counter-increment: song;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--accent);
+    border-radius: 14px;
+    padding: 14px 16px 12px;
+    margin-bottom: 12px;
+  }
+  .title-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .title-row::before {
+    content: counter(song);
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--soft);
+    border-radius: 999px;
+    min-width: 1.9em; height: 1.9em;
+    display: inline-grid; place-items: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .title-row strong { font-weight: 600; font-size: 1.05rem; }
+  audio { width: 100%; height: 40px; display: block; }
+  .dl {
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-top: 10px; padding: 10px 16px; width: 100%;
+    font-size: 0.95rem; font-weight: 600;
+    color: var(--surface); background: var(--accent);
+    border-radius: 10px; text-decoration: none;
+  }
+  .dl:hover, .dl:focus-visible { filter: brightness(1.1); }
+  .err { display: none; margin: 6px 0 0; font-size: 0.85rem; color: var(--muted); }
+  li.failed audio { display: none; }
+  li.failed .err { display: block; }
+  .missing { color: var(--muted); font-size: 0.92rem; margin: 0; }
+  li.no-audio { border-left-style: dashed; }
+  a:focus-visible { outline: 3px solid var(--star); outline-offset: 2px; border-radius: 4px; }
+  footer { margin-top: 40px; text-align: center; color: var(--muted); font-size: 0.88rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="star" viewBox="0 0 64 64" aria-hidden="true">
+      <path fill="var(--star)" d="M32 4l7.6 18.4L58 24.6 44 37.4 48 56 32 46.4 16 56l4-18.6L6 24.6l18.4-2.2z"/>
+    </svg>
+    <h1>História: Bebê Jesus</h1>
+    <p>Músicas na ordem da história, para cantar com os bebês.</p>
+  </header>
+
+  <ol>
+    <li>
+      <div class="title-row"><strong>Dim Dom (Sinos do Sábado)</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/3TRIM-01.SINOS-DO-SABADO-SABBATH-BELLS.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/3TRIM-01.SINOS-DO-SABADO-SABBATH-BELLS.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Clip-Clop</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-02.CLIP-CLOP-CLIP-CLOP-GUIA.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-02.CLIP-CLOP-CLIP-CLOP-GUIA.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Um Dia Bem Feliz</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-03.UM-DIA-BEM-FELIZ-IT-WAS-A-HAPPY-DAY-GUIA.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-03.UM-DIA-BEM-FELIZ-IT-WAS-A-HAPPY-DAY-GUIA.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Linda Ovelhinha</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/2TRIM-03.LINDA-OVELHINHA-WOOLLY-WOOLLY-LAMB-GUIA.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/2TRIM-03.LINDA-OVELHINHA-WOOLLY-WOOLLY-LAMB-GUIA.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Deus Fez as Vaquinhas</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-05.DEUS-FEZ-AS-VAQUINHAS-JESUS-MADE-THE-COWS-GUIA.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-05.DEUS-FEZ-AS-VAQUINHAS-JESUS-MADE-THE-COWS-GUIA.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Bebê Jesus</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://storage.googleapis.com/data.cpb.com.br/escola-sabatina/audios/licoes-infantis/iniciantes-1-3/bebes/BEBE-JESUS.mp3"></audio>
+      <a class="dl" href="https://storage.googleapis.com/data.cpb.com.br/escola-sabatina/audios/licoes-infantis/iniciantes-1-3/bebes/BEBE-JESUS.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+    <li>
+      <div class="title-row"><strong>Se na Família Está Jesus</strong></div>
+      <audio controls preload="none" referrerpolicy="no-referrer" src="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-11.SE-NA-FAMILIA-ESTA-JESUS-WITH-JESUS-IN-THE-FAMILY-GUIA.mp3"></audio>
+      <a class="dl" href="https://mais.cpb.com.br/wp-content/uploads/2025/11/4TRIM-11.SE-NA-FAMILIA-ESTA-JESUS-WITH-JESUS-IN-THE-FAMILY-GUIA.mp3" target="_blank" rel="noopener noreferrer">▶ Tocar no navegador</a>
+    </li>
+  </ol>
+
+  <footer>
+    Músicas e partituras: <a href="https://mais.cpb.com.br/audio-infantil/musicas-bebes-primeiros-passos/" target="_blank" rel="noopener">CPB mais – Bebês, Primeiros Passos</a>
+  </footer>
+</div>
+<script>
+  // Se o player não conseguir carregar o áudio, esconde o player e deixa só o botão.
+  document.querySelectorAll('li').forEach(function (li) {
+    var a = li.querySelector('audio');
+    if (!a) return;
+    var msg = document.createElement('p');
+    msg.className = 'err';
+    msg.textContent = 'Este visualizador bloqueou o player. Toque no botão para ouvir.';
+    a.after(msg);
+    a.addEventListener('error', function () { li.classList.add('failed'); }, true);
+    var s = a.querySelector('source');
+    if (s) s.addEventListener('error', function () { li.classList.add('failed'); });
+    // Só pausa os outros quando um começa a tocar.
+    a.addEventListener('play', function () {
+      document.querySelectorAll('audio').forEach(function (o) { if (o !== a) o.pause(); });
+    });
+  });
+</script>
+</body>
+</html>
